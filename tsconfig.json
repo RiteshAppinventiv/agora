@@ -1,0 +1,61 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target": "ES6",
+    "allowJs": false,
+    "module": "commonjs",
+    "removeComments": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "pretty": true,
+    "sourceMap": true,
+    "suppressImplicitAnyIndexErrors": true,
+    // "noImplicitAny": false,
+    "resolveJsonModule": true,
+    "outDir": "./build",
+    "typeRoots": [
+      "./src/interfaces/index.d.ts",
+      "node_modules/@types"
+    ],
+    "paths": {
+      "@config/*": [
+        "./src/config/*"
+      ],
+      "@controllers/*": [
+        "./src/controllers/*"
+      ],
+      "@dao/*": [
+        "./src/dao/*"
+      ],
+      "@json/*": [
+        "./src/json/*"
+      ],
+      "@lib/*": [
+        "./src/lib/*"
+      ],
+      "@mappers/*": [
+        "./src/mappers/*"
+      ],
+      "@models/*": [
+        "./src/models/*"
+      ],
+      "@plugins/*": [
+        "./src/plugins/*"
+      ],
+      "@routes/*": [
+        "./src/routes/*"
+      ],
+      "@utils/*": [
+        "./src/utils/*"
+      ]
+    }
+  },
+  "filesGlob": [
+    "./src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "src/lib/customTypings"
+  ]
+}
